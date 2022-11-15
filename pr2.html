@@ -1,0 +1,29 @@
+<html>
+<body>
+<hl><b> Multiplication Table <br><br></b></hl>
+Enter a number :
+<input type ="text" id="num1"/>
+<br>
+<br>
+Print multiplication table upto :
+<input type ="text" id="num2"/>
+
+<br>
+<input type ="button" value= "Print the Table" onclick= "table()" />
+
+<script type="text/javascript"> 
+
+
+function table()
+{
+var r1
+var r2 = parseInt(document.getElementById('num1').value); 
+var r3 = parseInt(document.getElementById('num2').value); 
+for(r1 = 1; r1<=r3; r1++)
+{
+	document.writeln(r2+"*"+r1+"="+(r1*r2)+"<br>");
+	}
+}
+</script>
+</body>
+</html>
