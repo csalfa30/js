@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Area of Circle, Rectangle and Triangle</title></head>
+
+<body>
+<h1>Area of Circle</h1>
+<input type="number" id="r" placeholder="Enter radius">
+<input type="submit" value ="Area" onclick="calCircle() "></input>
+
+<h1>Area of Rectangle </h1>
+<input type="number" id="l" placeholder="Enter length">
+	<input type="number" id="b" placeholder="Enter breadth">
+<input type="submit" value ="Area" onclick="calRectangle()">
+
+<h1>Area of Triangle </h1>
+<input type="number" id="h" placeholder="Enter height">
+<input type="number" id="ba" placeholder="Enter base">
+<input type="submit" value ="Area" onclick="calTriangle()">
+
+<Script type="text/javascript">
+
+function calCircle() {
+    var r = document.getElementById("r").value;  var ans = Math.PI * r * r ; window.alert("The area of Circle is : " + (ans));
+}
+
+function calRectangle() {var l = document.getElementById("l").value ; var b = document.getElementById("b").value ; 
+window.alert("The area of Rectangle is : " + (l*b));
+}
+
+function calTriangle() {var h = document.getElementById("h").value ; var ba = document.getElementById("ba").value ;
+window.alert("The area of Triangle is : " +(h*ba/2));
+}
+
+</Script>
+</body>
+</html>
